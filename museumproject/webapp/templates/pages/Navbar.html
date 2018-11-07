@@ -1,0 +1,34 @@
+
+{% block content %}
+
+<!-- Dropdown Structure -->
+<ul id="dropdown1" class="dropdown-content">
+  <li><a href="#">ABOUT THE MUSEUM</a></li>
+  <li><a href="#!">NEWS</a></li>
+  <li class="divider"></li>
+  <li><a href="#!">FOUNDING DONORS</a></li>
+</ul>
+<nav>
+  <div class="nav-wrapper purple">
+    <a href="#!" class="purple brand-logo">African American History Museum</a>
+    <ul class="right purple hide-on-med-and-down">
+        <!-- Dropdown Trigger -->
+      <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">ABOUT<i class="material-icons right">arrow_drop_down</i></a></li>
+      <li><a href="sass.html">EXIHBITS</a></li>
+      <li><a href="badges.html">Components</a></li>
+    </ul>
+  </div>
+</nav>
+
+
+
+
+
+<script>
+   document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.dropdown-trigger');
+    var instances = M.Dropdown.init(elems);
+  });
+</script>
+
+{% endblock content%}

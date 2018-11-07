@@ -1,0 +1,69 @@
+{% load static %}
+
+
+  <section class="slider">
+    <ul class="slides"  >
+      <li>
+        <img src="{% static 'AAmuseum.jpg' %}" alt="Unsplashed background img 1"> <!-- random image -->
+        <div class="caption center-align red-text">
+          <h3>I HOPE YOU ENJOY OUR SOFTWARE</h3>
+          <h5 class="dark red-text text-dark-3">HERE IS OUR MUSEUM LOGO</h5>
+        </div>
+      </li>
+      <li>
+        <img src="{% static 'museum.jpg' %}" alt="Unsplashed background img 1"> <!-- random image -->
+        <div class="caption left-align white-text">
+          <h3>OUR MUSEUM</h3>
+          <h5 class="dark white-text text-dark-3">PLEASE VISIT OUR ABOUT PAGE FOR MORE INFORMATION</h5>
+        </div>
+      </li>
+      <li>
+        <img src="{% static 'images.jpg' %}" alt="Donations"> <!-- random image -->
+        <div class="caption left-align white-text">
+          <h3>WE ARE SHOWING 5 GREAT EXHIBITS</h3>
+          <h5 class="dark white-text text-lighten-3">EXPLORE OUR WONDDERFUL EXHIBITS</h5>
+        </div>
+      </li>
+      <li>
+        <img src="{% static 'give.png' %}" alt="Something"> <!-- random image -->
+        <div class="caption right-align black-text">
+          <h3>A HELPING HAND CAN CHANGE A LIFE</h3>
+          <h5 class="dark black-text text-lighten-3">GIVE GIVE GIVE !!</h5>
+        </div>
+      </li>
+      <li>
+        <img src="{% static 'map.png' %}" alt="locations"> <!-- random image -->
+        <div class="caption center-align white-text">
+          <h3>VIEWS</h3>
+          <h5 class="dark white-text text-lighten-3">LOST AND NEED HELP CLICK ON OUR EXPLORE BUTTON</h5>
+        </div>
+      </li>
+    </ul>
+
+  </section>
+
+
+<script>
+ const slider = document.querySelector('.slider');
+ M.Slider.init(slider, {
+    indicators:false,
+    height:400,
+    transiton:500,
+    interval:6000
+ });
+
+</script>
+
+<!--<script>-->
+
+
+
+  <!--&lt;!&ndash;document.addEventListener('DOMContentLoaded', function() {&ndash;&gt;-->
+    <!--&lt;!&ndash;var elems = document.querySelectorAll('.slider');&ndash;&gt;-->
+    <!--&lt;!&ndash;var instances = M.Slider.init(elems);&ndash;&gt;-->
+
+  <!--&lt;!&ndash;});&ndash;&gt;-->
+
+
+<!--&lt;!&ndash;</script>&ndash;&gt;-->
+  
