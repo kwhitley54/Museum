@@ -8,15 +8,18 @@ from django.http import HttpResponse
 # Create your views here.
 
 def index(request):
-    #return('HELLO FROM POSTS   ')
 
     return render(request, 'pages/index.html')
 
 def about(request):
     '''Loads the about page'''
 
-    co
+    #return HttpResponse('about')
 
 
-    return render(request, 'pages/about.html',context)
 
+    return render(request, 'pages/about.html')
+
+def questions(request):
+
+    return render(request, 'pages/questions.html')
