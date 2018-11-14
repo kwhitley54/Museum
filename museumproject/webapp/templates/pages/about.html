@@ -1,11 +1,29 @@
-{% include "./Navbar.html" %}
+
 
 {%block content %}
+{% load staticfiles %}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>About The Museum</title>
-    <h1>ABOUT THE MUSEUM</h1>
+    <!--<h1><center>ABOUT THE MUSEUM</center></h1>-->
+
+
+    <div class="parallax-container">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <br><br>
+        <h1 class="header center teal-text text-lighten-2">ABOUT THE MUSEUM</h1>
+        <div class="row center">
+          <!--<h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>-->
+        </div>
+      </div>
+    </div>
+    <div class="parallax"><img src="{% static 'about.jpeg' %}" alt="Unsplashed background img 1"></div>
+  </div>
+
+{% endblock content %}
+
 </head>
 <body>
 <p> The National Museum of African American History and Culture is the only national museum devoted exclusively to the documentation of African American life, history, and culture.
@@ -14,9 +32,22 @@
     The Museum opened to the public on September 24, 2016, as the 19th and newest museum of the Smithsonian Institution.</p>
 
 
+<script> $(document).ready(function(){
+    $('.parallax').parallax();
+  });
+</script>
 
-
-
-{% endblock content %}
 </body>
 </html>
+
+<div class="parallax-container">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row center">
+<!--          <h5 class="header white-text center col s12">A modern responsive front-end framework based on Material Design</h5> -->
+        </div>
+        <div class="row center">
+          <a href="http://materializecss.com/getting-started.html" id="display-button" class="btn-large waves-effect waves-light teal lighten-1">EXPLORE OUR EXHIBITIONS</a>
+        </div>
+      </div>
+    </div>
