@@ -1,15 +1,39 @@
 
-
-{%block content %}
-{% load staticfiles %}
+<!DOCTYPE HTML>
 <html lang="en">
+<!-- Nav -->
+{% include "./Navbar.html" %}
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <title>About The Museum</title>
-    <!--<h1><center>ABOUT THE MUSEUM</center></h1>-->
+     <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+</head>
+<body>
+{% load staticfiles %}
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.slider');
+    var instances = M.Slider.init(elems);
+  });
+
+</script>
 
 
-    <div class="parallax-container">
+    {%block content %}
+
+
+<section class="parallax-container">
     <div class="section no-pad-bot">
       <div class="container">
         <br><br>
@@ -19,35 +43,39 @@
         </div>
       </div>
     </div>
-    <div class="parallax"><img src="{% static 'about.jpeg' %}" alt="Unsplashed background img 1"></div>
-  </div>
+    {% load static %}
+    <div class ="parallax"><img src="{% static 'about.jpeg' %}" alt="Musemum"></div>
+</section>
 
-{% endblock content %}
 
-</head>
-<body>
 <p> The National Museum of African American History and Culture is the only national museum devoted exclusively to the documentation of African American life, history, and culture.
     It was established by Act of Congress in 2003, following decades of efforts to promote and highlight the contributions of African Americans.
     To date, the Museum has collected more than 36,000 artifacts and nearly 100,000 individuals have become members.
     The Museum opened to the public on September 24, 2016, as the 19th and newest museum of the Smithsonian Institution.</p>
 
 
-<script> $(document).ready(function(){
-    $('.parallax').parallax();
-  });
-</script>
+<div class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row center">
+          <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
+        </div>
+      </div>
+    </div>
+        {% load static %}
+    <div class="parallax"><img src="{% static 'lead.jpg' %}" alt="Unsplashed background img 3"></div>
+  </div>
+
+
+
+
+
+    {% endblock content %}
 
 </body>
 </html>
 
-<div class="parallax-container">
-    <div class="section no-pad-bot">
-      <div class="container">
-        <div class="row center">
-<!--          <h5 class="header white-text center col s12">A modern responsive front-end framework based on Material Design</h5> -->
-        </div>
-        <div class="row center">
-          <a href="http://materializecss.com/getting-started.html" id="display-button" class="btn-large waves-effect waves-light teal lighten-1">EXPLORE OUR EXHIBITIONS</a>
-        </div>
-      </div>
-    </div>
+
+
+
+
