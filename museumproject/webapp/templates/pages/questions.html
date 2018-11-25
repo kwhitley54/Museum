@@ -1,16 +1,90 @@
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <title>FREQUENTLY ASKED QUESTIONS</title>
 </head>
 <body>
+{% load staticfiles %}
 
-<p>The Smithsonian National Museum of African American History and Culture offers a once-in-a-lifetime opportunity to be part of the founding
-    of a new national institution. We invite individuals, foundations, corporations, and other organizations to join us in this historic
-    endeavor that will impact the nation for generations to come. There are many ways you can support this watershed moment in the national discussion about race and
-    the vital role African Americans have played in the American story.</p>
+<div id="index-banner" class="parallax-container">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <br><br>
+        <!--<h1 class="header center teal-text text-lighten-2">Questions</h1>-->
+
+
+        <br><br>
+
+      </div>
+    </div>
+    <div class="parallax"><img src="{% static 'questions.jpg' %}" alt="Unsplashed background img 1"></div>
+  </div>
+
+
+
+
+<blockquote><center> To help you prepare for your visit, we have provided answers below to the most frequently asked questions about our Museum.</center></blockquote>
+
+
+
+<ul class="collapsible">
+    <li>
+      <div class="collapsible-header red white-text"><i class="material-icons">filter_drama</i>What are the Museum's operating hours?</div>
+      <div class="collapsible-body"><span>The Museum is open 7-days a week, 364 days a year. Our regular operating hours are from 10:00 a.m. - 5:30 p.m.
+          The Museum is closed on December 25.
+
+      Special Hours:
+       The Museum will be open from 10:00 a.m. – 7:30 p.m. on Friday, November 23 and Wednesday, December 26 through Saturday, December 29.
+      </span></div>
+    </li>
+    <li>
+      <div class="collapsible-header"><i class="material-icons">place</i>What are admissions or entrance costs for the Museum?</div>
+      <div class="collapsible-body"><span>Entry to all Smithsonian museums in Washington, D.C. is free.</span></div>
+    </li>
+    <li>
+      <div class="collapsible-header red white-text""><i class="material-icons">whatshot</i>Can I plan a tour or receive advice about what to see at the Museum?
+      </div>
+      <div class="collapsible-body"><span>Volunteer Visitor Services Representatives are available to provide advice and to help navigate the 12 galleries, the Museum Store, Sweet Home Café and all the opportunities
+          and services that are part of the Museum experience.</span></div>
+    </li>
+    <li>
+      <div class="collapsible-header"><i class="material-icons">whatshot</i>Is there a museum store?</div>
+      <div class="collapsible-body"><span>Yes, there is a Museum Store located on the Entry Level offering a wide selection of items reflecting the experience,
+          architecture, and collections of the Museum. Offerings are selected to encourage visitors to continue their
+          exploration of African American history and culture.</span></div>
+    </li>
+    <li>
+      <div class="collapsible-header red white-text""><i class="material-icons">whatshot</i>What are expected wait times for entrance to Museum and events?</div>
+      <div class="collapsible-body"><span>Please be prepared for crowds and wait times as you enter the Museum. Please be mindful that it will take time to enter the Museum through the security screening,
+          orient yourself to the space and begin your Museum experience. .</span></div>
+    </li>
+    <li>
+      <div class="collapsible-header"><i class="material-icons">place</i>Are food and drink allowed in the Museum?</div>
+      <div class="collapsible-body"><span>No food and drink is allowed in the Museum. Bottled water is permitted.
+          You may consume food and drinks in the Sweet Home Café, but not in other areas of the Museum.
+          Groups who bring food are encouraged to picnic on the National Mall. Bag lunch facilities are not available in the Museum.
+
+</span></div>
+    </li>
+  </ul>
+
+
+<p>We would like to how your experience been at African American Museum, Please fill out the form below so we can address
+any issues that may have affected your experience here at the museum. Thank You!</p>
+
+
 
 <div class ="col s12 m6">
     <div class ="card-panel grey lighten-3">
@@ -32,24 +106,6 @@
     </div>
 </div>
 
-{% load staticfiles %}
-<div id="index-banner" class="parallax-container">
-    <div class="section no-pad-bot">
-      <div class="container">
-        <br><br>
-        <h1 class="header center teal-text text-lighten-2">Parallax Template</h1>
-        <div class="row center">
-          <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
-        </div>
-        <div class="row center">
-          <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Get Started</a>
-        </div>
-        <br><br>
-
-      </div>
-    </div>
-    <div class="parallax"><img src="{% static 'give.png' %}" alt="Unsplashed background img 1"></div>
-  </div>
 
 
 
@@ -57,6 +113,11 @@
     document.addEventListener('DOMContentLoaded', function() {
     var elems = document.querySelectorAll('.parallax');
     var instances = M.Parallax.init(elems);
+  });
+
+   document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.collapsible');
+    var instances = M.Collapsible.init(elems);
   });
 </script>
 </body>

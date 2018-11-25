@@ -21,16 +21,7 @@
 </head>
 <body>
 {% load staticfiles %}
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-    var elems = document.querySelectorAll('.slider');
-    var instances = M.Slider.init(elems);
-  });
 
-</script>
-
-
-    {%block content %}
 
 
 <section class="parallax-container">
@@ -53,24 +44,57 @@
     To date, the Museum has collected more than 36,000 artifacts and nearly 100,000 individuals have become members.
     The Museum opened to the public on September 24, 2016, as the 19th and newest museum of the Smithsonian Institution.</p>
 
+<p>There are four pillars upon which the our museum stands by:</p>
 
-<div class="parallax-container valign-wrapper">
-    <div class="section no-pad-bot">
-      <div class="container">
-        <div class="row center">
-          <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
-        </div>
-      </div>
-    </div>
-        {% load static %}
-    <div class="parallax"><img src="{% static 'lead.jpg' %}" alt="Unsplashed background img 3"></div>
-  </div>
+<ul class="collapsible popout">
+    <li>
+      <div class="collapsible-header purple white-text"><i class="material-icons">looks_one</i>First</div>
+      <div class="collapsible-body"><span>It provides an opportunity for those who are interested in African American culture to explore and r
+          evel in this history through interactive exhibitions</span></div>
+    </li>
+    <li>
+      <div class="collapsible-header orange "><i class="material-icons">looks_two</i>Second</div>
+      <div class="collapsible-body"><span>It helps all Americans see how their stories, their histories,
+          and their cultures are shaped and informed by global influences</span></div>
+    </li>
+    <li>
+      <div class="collapsible-header green"><i class="material-icons">looks_3</i>Third</div>
+      <div class="collapsible-body"><span>It explores what it means to be an American and share how American values like resiliency, optimism,
+          and spirituality are reflected in African American history and culture</span></div>
+    </li>
+    <li>
+      <div class="collapsible-header red white-text"><i class="material-icons">looks_4</i>Fourth</div>
+      <div class="collapsible-body"><span>It serves as a place of collaboration that reaches beyond Washington, D.C. to engage new audiences and to work with the myriad of museums and educational
+          institutions that have explored and preserved this important history well before this museum was created.</span></div>
+    </li>
+  </ul>
 
 
+<blockquote class="paragraphs-item paragraphs-item--quote paragraphs-item--full anim-fadein" about="" typeof="" id="paragraphs-item-321" style="opacity: 1;">
+  <p>This Museum will tell the American story through the lens of African American history and culture. This is America’s Story and this museum is for all Americans.
+</p>
+  <cite class="blockquote__cite">
+
+	<span class="cite__name">Lonnie G. Bunch, III</span>
+
+	<span class="cite__title">Founding Director, NMAAHC</span>
+  </cite>
+</blockquote>
 
 
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.slider');
+    var instances = M.Slider.init(elems);
+  });
 
-    {% endblock content %}
+  document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.collapsible');
+    var instances = M.Collapsible.init(elems);
+  });
+
+</script>
+
 
 </body>
 </html>
