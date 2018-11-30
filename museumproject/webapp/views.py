@@ -37,3 +37,11 @@ def exhibit(request):
 
 def bob(request):
     return render(request, 'pages/bob.html')
+
+def jackie(request):
+    return render(request, 'pages/jackie.html')
+
+
+
+def example(request):
+    return render(request, 'pages/example.html')

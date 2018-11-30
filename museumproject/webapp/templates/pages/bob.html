@@ -6,33 +6,9 @@
 </head>
 <body>
 {% load staticfiles %}
-<!--<html>-->
-<style>
-body {
-
-	background-image: url("black.jpg");
-}
-
-h1 {
-    text-align: center;
-	color: white;
-}
-
-h2 {
-    text-align: center;
-	color: white;
-	margin-right: 100px;
-    margin-left: 100px;
-
-
-}
-p.outset {border-style: outset;}
-h3 {
-    text-align: right;
-}
 </style>
 
-<h1><img src="bob.gif" alt = "Bob Marley" width="1800" height="700"/></h1>
+<h1><img src="{% static 'bob.gif' %}" alt = "Bob Marley" width="1800" height="700"/></h1>
 <i><h1>Bob Marley</h1> </i>
 <p class="outset">
 <h2>
@@ -65,7 +41,7 @@ throughout the 1970s.</p>
 One of the 20th century’s most charismatic and challenging performers, Bob Marley’s renown now transcends the role of reggae luminary: he is regarded as a cultural icon who implored his people to know their history “coming from the root of King David, through the line of Solomon,” as he sang on “Blackman Redemption”; Bob urged his listeners to check out the “Real Situation” and to rebel against the vampiric “Babylon System”. “Bob had a rebel type of approach, but his rebelliousness had a clearly defined purpose to it,” acknowledges Chris Blackwell, the founder of Island Records, who played a pivotal role in the Bob Marley biography by introducing Marley and the Wailers to an international audience. “It wasn’t just mindless rebelliousness, he was rebelling against the circumstances in which he and so many people found themselves.”
 </b></h2>
 <p class="outset">
-<h1><img src="bob2.jpg" alt = "Jackie" width="1800" height="700"/></h1>
+<h1><img src="{% static 'bob2.jpg' %}" alt = "Jackie" width="1800" height="700"/></h1>
 <!--</html>-->
 
 
