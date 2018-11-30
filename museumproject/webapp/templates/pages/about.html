@@ -1,5 +1,5 @@
 
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="en">
 <!-- Nav -->
 {% include "./Navbar.html" %}
@@ -34,9 +34,33 @@
         </div>
       </div>
     </div>
-    {% load static %}
+
     <div class ="parallax"><img src="{% static 'about.jpeg' %}" alt="Musemum"></div>
 </section>
+
+
+<!---- NAVBAR --->
+
+<ul id="dropdown1" class="dropdown-content">
+  <li><a href="#!">BOB MARLEY</a></li>
+  <li><a href="#!">JACKIE ROBERSON</a></li>
+  <li class="divider"></li>
+  <li><a href="#!">Another</a></li>
+</ul>
+<nav>
+  <div class="nav-wrapper">
+    <a href="#!" class="brand-logo">Logo</a>
+    <ul class="right hide-on-med-and-down">
+      <li><a href="/index">HOME</a></li>
+      <li><a href="badges.html">FAQ</a></li>
+      <!-- Dropdown Trigger -->
+      <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">EXHIBITS<i class="material-icons right">arrow_drop_down</i></a></li>
+    </ul>
+  </div>
+</nav>
+
+
+
 
 
 <p> The National Museum of African American History and Culture is the only national museum devoted exclusively to the documentation of African American life, history, and culture.

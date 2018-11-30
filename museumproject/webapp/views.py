@@ -21,5 +21,19 @@ def about(request):
     return render(request, 'pages/about.html')
 
 def questions(request):
+   return render(request, 'pages/questions.html')
 
-    return render(request, 'pages/questions.html')
+
+#
+# # def search(request):
+#     if request.method =='POST':
+#         URL_SEARCH
+#
+
+
+def exhibit(request):
+    return render(request, 'pages/exhibit.html')
+
+
+def bob(request):
+    return render(request, 'pages/bob.html')
