@@ -11,7 +11,10 @@ urlpatterns = [
     url(r'^exhibit/$', views.exhibit, name='exhibit'),
     url(r'^bob/$',views.bob, name='bob'),
     url(r'^jackie/$', views.jackie, name='jackie'),
-    url(r'^example',views.example, name='example'),
+    url(r'^fredrick',views.fredrick, name='fredrick'),
+    url(r'^booker',views.booker, name='booker'),
+    url(r'^jordan',views.jordan, name='jordan'),
+    url(r'^michael',views.michael, name='michael'),
 
 ]
 

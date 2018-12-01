@@ -22,21 +22,10 @@
 <body>
 {% load staticfiles %}
 
-
-
-<section class="parallax-container">
-    <div class="section no-pad-bot">
-      <div class="container">
-        <br><br>
-        <h1 class="header center teal-text text-lighten-2">ABOUT THE MUSEUM</h1>
-        <div class="row center">
-          <!--<h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>-->
-        </div>
-      </div>
-    </div>
-
-    <div class ="parallax"><img src="{% static 'about.jpeg' %}" alt="Musemum"></div>
-</section>
+<!--- Parallax Template -->
+<div class = "parallax-container">
+    <h1><img src="{% static 'about.jpeg' %}" alt = "Bob Marley" width="1500" height="1000"/></h1>
+</div>
 
 
 
@@ -95,7 +84,53 @@
     var instances = M.Collapsible.init(elems);
   });
 
+  <!--- AutoComplete --->
+  const ac = document
+
 </script>
+
+
+ <!--  Footer Section   -->
+
+
+  <footer class="page-footer purple">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Company Bio</h5>
+          <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
+
+
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Settings</h5>
+          <ul>
+            <li><a class="white-text" href="/about"><i class="material-icons">book</i></a>
+            <li><a class="white-text" href="#!"><i class="material-icons">tablet</i></a>
+            <li><a class="white-text" href="#!"><i class ="material-icons">credit_card</i></a>
+            <li><a class="white-text" href="/questions"><i class="material-icons">feedback</i></a>
+          </ul>
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Connect</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Instagram</a></li>
+            <li><a class="white-text" href="#!">Twitter</a></li>
+            <li><a class="white-text" href="#!">Facebook</a></li>
+            <li><a class="white-text" href="#!">Snapchat</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      Made by <a class="brown-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+      </div>
+    </div>
+  </footer>
+
+
+
 
 
 </body>

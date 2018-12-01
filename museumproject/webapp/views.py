@@ -43,5 +43,14 @@ def jackie(request):
 
 
 
-def example(request):
-    return render(request, 'pages/example.html')
+def fredrick(request):
+    return render(request, 'pages/fredrick.html')
+
+def jordan(request):
+    return render(request, 'pages/jordan.html')
+
+def booker(request):
+    return render(request, 'pages/booker.html')
+
+def michael(request):
+    return render(request, 'pages/michael.html')

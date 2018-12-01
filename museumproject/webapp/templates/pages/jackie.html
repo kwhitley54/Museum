@@ -2,16 +2,59 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+
+
+     <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <title> JACKIE ROBERSON</title>
 </head>
 <body>
 
+
 {% load staticfiles %}
 
 <h1><img src="{% static 'jackie.gif' %}" alt = "Jackie" width="1800" height="700"/></h1>
+
+
+
+<!--- NavBar --->
+<ul id="dropdown1" class="dropdown-content">
+    <li><a href="/bob">BOB MARLEY</a></li>
+    <li><a href="/jackie">JACKIE ROBERSON</a></li>
+    <li><a href="/booker">BOOKER T WASHINGTON</a></li>
+    <li class="/divider"></li>
+    <li><a href="/jackson">MICHAEL JACKSON</a></li>
+    <li><a href="/jordan">MICHAEL JORDAN</a></li>
+    <li><a href="/fredrick">FREDRICK DOUGLAS</a></li>
+</ul>
+
+<nav>
+    <div class="nav-wrapper purple">
+        <a href="#!" class="purple brand-logo">African American History Museum</a>
+        <ul class="right purple hide-on-med-and-down">
+            <!-- Dropdown Trigger -->
+            <li><a href="#"> <i class = "material-icons">search</i></a></li>
+            <li><a href="/index">HOME</a></li>
+            <li><a href="/questions">FAQ</a></li>
+            <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">EXHIBITS<i class="material-icons right">arrow_drop_down</i></a></li>
+        </ul>
+    </div>
+</nav>
+
+
+
+
+
 <i><h1>Jack "Jackie" Roosevelt Robinson</h1> </i>
 <p class="outset">
-<h2>
+<h4>
 Jack Roosevelt Robinson was born in Cairo, Georgia in 1919 to a family of sharecroppers. His mother, Mallie Robinson,
 single-handed raised Jackie and her four other children. They were the only black family on their block, and the prejudice they
 encountered only strengthened their bond. From this humble beginning would grow the first baseball player to break Major League
@@ -44,9 +87,66 @@ racial equality and acknowledged the profound influence of one man’s life on t
 all Major League teams across the nation celebrated this milestone. Also that year, The United States Post Office honored Robinson by making
 him the subject of a commemorative postage stamp. On Tuesday, April 15th, President Bill Clinton paid tribute to Jackie at Shea Stadium in
 New York in a special ceremony.</p>
-</b></h2>
+</b></h4>
 <p class="outset">
 <h1><img src="{% static 'jackie2.gif' %}" alt = "Jackie" width="1800" height="700"/></h1>
+
+
+
+
+
+ <script>
+document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.dropdown-trigger');
+    var instances = M.Dropdown.init(elems);
+  });
+</script>
+
+
+<!--  Footer Section   -->
+
+
+  <footer class="page-footer purple">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Company Bio</h5>
+          <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
+
+
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Settings</h5>
+          <ul>
+            <li><a class="white-text" href="/about"><i class="material-icons">book</i></a>
+            <li><a class="white-text" href="#!"><i class="material-icons">tablet</i></a>
+            <li><a class="white-text" href="#!"><i class ="material-icons">credit_card</i></a>
+            <li><a class="white-text" href="/questions"><i class="material-icons">feedback</i></a>
+          </ul>
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Connect</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Instagram</a></li>
+            <li><a class="white-text" href="#!">Twitter</a></li>
+            <li><a class="white-text" href="#!">Facebook</a></li>
+            <li><a class="white-text" href="#!">Snapchat</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      Made by <a class="brown-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+
+
 
 </body>
 </html>

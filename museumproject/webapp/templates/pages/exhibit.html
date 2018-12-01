@@ -10,71 +10,44 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
     <!--Import Google Icon Font-->
-      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-      <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 
 
-     <title>EXHIBITIONS</title>
+    <title>EXHIBITIONS</title>
 </head>
 <body>
 
-{% block content %}
+{% load staticfiles %}
 
-{% load static %}
+<div class = "parallax-container">
+    <h1><img src="{% static 'exhibit.jpg' %}" alt = "exhibit" width="1500" height="800"/></h1>
 
-
-
- <div id="index-banner" class="parallax-container">
-    <div class="section no-pad-bot">
-      <div class="container">
-        <br><br>
-        <h1 class="header center teal-text text-lighten-2">Parallax Template</h1>
-        <div class="row center">
-          <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
-        </div>
-        <div class="row center">
-          <!--<a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Get Started</a>-->
-        </div>
-        <br><br>
-
-      </div>
-    </div>
-
-    <div class="parallax"><img src="{% static 'exhibit.jpg' %}" alt="background "></div>
-
-  </div>
-
-
+</div>
 
 <!--- NavBar --->
 <ul id="dropdown1" class="dropdown-content">
-  <li><a href="/bob">BOB MARLEY</a></li>
-  <li><a href="/jackie">JACKIE ROBERSON</a></li>
-  <li class="divider"></li>
-  <li><a href="#!">OTHER</a></li>
+    <li><a href="/bob">BOB MARLEY</a></li>
+    <li><a href="/jackie">JACKIE ROBERSON</a></li>
+    <li><a href="/booker">BOOKER T WASHINGTON</a></li>
+    <li class="/divider"></li>
+    <li><a href="/jackson">MICHAEL JACKSON</a></li>
+    <li><a href="/jordan">MICHAEL JORDAN</a></li>
+    <li><a href="/fredrick">FREDRICK DOUGLAS</a></li>
 </ul>
 
 <nav>
-  <div class="nav-wrapper purple">
-    <a href="#!" class="purple brand-logo">African American History Museum</a>
-    <ul class="right purple hide-on-med-and-down">
-        <!-- Dropdown Trigger -->
-        <li><a href="#"> <i class = "material-icons">search</i></a></li>
-      <li><a href="/index">HOME</a></li>
-      <li><a href="/questions">FAQ</a></li>
-        <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">EXHIBITS<i class="material-icons right">arrow_drop_down</i></a></li>
-    </ul>
-  </div>
+    <div class="nav-wrapper purple">
+        <a href="#!" class="purple brand-logo">African American History Museum</a>
+        <ul class="right purple hide-on-med-and-down">
+            <!-- Dropdown Trigger -->
+            <li><a href="#"> <i class = "material-icons">search</i></a></li>
+            <li><a href="/index">HOME</a></li>
+            <li><a href="/questions">FAQ</a></li>
+            <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">EXHIBITS<i class="material-icons right">arrow_drop_down</i></a></li>
+        </ul>
+    </div>
 </nav>
-
-
-
-
-
-
-
-
-
 
 
 <!-- Card Section -->
@@ -82,48 +55,128 @@
 <div class="container">
     <center><h2>EXHIBITS</h2></center>
     <div class="row">
-      <div class="col s12 l6">
-        <div class="card">
-          <div class="card-image">
-            <img src="{% static 'bob.jpeg' %}" alt="">
-            <a href="" class="btn-floating pink pulse">
-              <i class="material-icons">favorite</i>
-            </a>
-          </div>
-          <div class="card-content">
-            <span class="card-title">BOB MARLEY</span>
-            <p>Robert Nesta Marley, OM was a Jamaican singer-songwriter who became an international musical and cultural icon,
-                blending mostly reggae, ska, and rocksteady in his compositions. </p>
-          </div>
-          <div class="card-action">
-            <a href="/bob">More details</a>
-            <!--<a href="">View Ingredients</a>-->
-          </div>
+        <div class="col s12 l6">
+            <div class="card">
+                <div class="card-image">
+                    <img src="{% static 'bob.jpeg' %}" alt="">
+                    <a href="" class="btn-floating pink pulse">
+                        <i class="material-icons">favorite</i>
+                    </a>
+                </div>
+                <div class="card-content">
+                    <span class="card-title">BOB MARLEY</span>
+                    <p>Robert Nesta Marley, OM was a Jamaican singer-songwriter who became an international musical and cultural icon,
+                        blending mostly reggae, ska, and rocksteady in his compositions. </p>
+                </div>
+                <div class="card-action">
+                    <a href="/bob">More details</a>
+                    <!--<a href="">View Ingredients</a>-->
+                </div>
+            </div>
         </div>
-      </div>
 
 
         <div class="col s13 l6">
-        <div class="card">
-          <div class="card-image">
-            <img src="{% static 'jackie1.jpg' %}" alt="">
-            <a href="" class="btn-floating pink pulse">
-              <i class="material-icons">favorite</i>
-            </a>
-          </div>
-          <div class="card-content">
-            <span class="card-title">JACKIE ROBERSON</span>
-            <p>Jack Roosevelt Robinson was an American professional baseball player who became the first African American to play in Major League Baseball in the modern era.
-                Robinson broke the baseball color line when the Brooklyn Dodgers started him at first base on April 15, 1947.</p>
-          </div>
-          <div class="card-action">
-            <a href="">More details</a>
-            <!--<a href="">View Ingredients</a>-->
-          </div>
+            <div class="card">
+                <div class="card-image">
+                    <img src="{% static 'jackie1.jpg' %}" alt="">
+                    <a href="/jackie" class="btn-floating pink pulse">
+                        <i class="material-icons">favorite</i>
+                    </a>
+                </div>
+                <div class="card-content">
+                    <span class="card-title">JACKIE ROBERSON</span>
+                    <p>Jack Roosevelt Robinson was an American professional baseball player who became the first African American to play in Major League Baseball in the modern era.
+                        Robinson broke the baseball color line when the Brooklyn Dodgers started him at first base on April 15, 1947.</p>
+                </div>
+                <div class="card-action">
+                    <a href="/jackie">More details</a>
+                    <!--<a href="">View Ingredients</a>-->
+                </div>
+            </div>
         </div>
-      </div>
+
+        <div class="col s12 l6">
+            <div class="card">
+                <div class="card-image">
+                    <img src="{% static 'michael.jpg' %}" alt="">
+                    <a href="/michael" class="btn-floating pink pulse">
+                        <i class="material-icons">favorite</i>
+                    </a>
+                </div>
+                <div class="card-content">
+                    <span class="card-title">MICHAEL JACKSON</span>
+                    <p>Michael Joseph Jackson was an American singer, songwriter and dancer. Dubbed the "King of Pop", he is regarded as one of the most significant cultural icons of the 20th century
+                        and is also regarded as one of the greatest entertainers of all time. </p>
+                </div>
+                <div class="card-action">
+                    <a href="/michael">More details</a>
+                    <!--<a href="">View Ingredients</a>-->
+                </div>
+            </div>
+        </div>
+
+        <div class="col s12 l6">
+            <div class="card">
+                <div class="card-image">
+                    <img src="{% static 'mj.jpg' %}" alt="">
+                    <a href="/jordan" class="btn-floating pink pulse">
+                        <i class="material-icons">favorite</i>
+                    </a>
+                </div>
+                <div class="card-content">
+                    <span class="card-title">MICHAEL JORDAN</span>
+                    <p>Michael Jeffrey Jordan, also known by his initials, MJ, is an American former professional basketball player.
+                        He played 15 seasons in the National Basketball Association for the Chicago Bulls and Washington Wizards.</p>
+                </div>
+                <div class="card-action">
+                    <a href="/jordan">More details</a>
+                    <!--<a href="">View Ingredients</a>-->
+                </div>
+            </div>
+        </div>
+         <div class="col s12 l6">
+            <div class="card">
+                <div class="card-image">
+                    <img src="{% static 'booker.jpg' %}" alt="">
+                    <a href="/booker" class="btn-floating pink pulse">
+                        <i class="material-icons">favorite</i>
+                    </a>
+                </div>
+                <div class="card-content">
+                    <span class="card-title">BOOKER T WASHINGTON</span>
+                    <p>Booker Taliaferro Washington was an American educator, author, orator, and advisor to presidents of the United States.
+                        Between 1890 and 1915, Washington was the dominant leader in the African-American community.</p>
+                </div>
+                <div class="card-action">
+                    <a href="/booker">More details</a>
+                    <!--<a href="">View Ingredients</a>-->
+                </div>
+            </div>
+        </div>
+         <div class="col s12 l6">
+            <div class="card">
+                <div class="card-image">
+                    <img src="{% static 'fd.jpg' %}" alt="">
+                    <a href="/fredrick" class="btn-floating pink pulse">
+                        <i class="material-icons">favorite</i>
+                    </a>
+                </div>
+                <div class="card-content">
+                    <span class="card-title">FREDERICK DOUGLAS</span>
+                    <p>Frederick Douglass was an American social reformer, abolitionist, orator, writer, and statesman.
+                        After escaping from slavery in Maryland, he became a national leader of the abolitionist movement in Massachusetts and New York,
+                        gaining note for his oratory and incisive antislavery writings.</p>
+                </div>
+                <div class="card-action">
+                    <a href="/fredrick">More details</a>
+                    <!--<a href="">View Ingredients</a>-->
+                </div>
+            </div>
+        </div>
+
     </div>
-  </div>
+</div>
 
 
 
@@ -145,27 +198,6 @@
 
 
 
-<!--<div class="container">-->
-    <!--<h2>Music</h2>-->
-
-<!--<div class = "row">-->
-    <!--<div class = "col s14 14">-->
-        <!--<div class ="card">-->
-            <!--<div class = "cards-image">-->
-                <!--<img src = "{% static 'lead.jpg' %}" alt ="Artist">-->
-                <!--&lt;!&ndash;<a href = "#" class = "btn-floating blue pulse">&ndash;&gt;-->
-                    <!--&lt;!&ndash;<i class = "material-icons">favorite</i>&ndash;&gt;-->
-                <!--</a>-->
-            <!--<div class = "card-content">-->
-                <!--<span class = "card - title">Bob Marley</span>-->
-
-                <!--<p>Company X wants to open a dating service Web site. It hires Company Y to develop the software.-->
-                    <!--Company Y hires Gina as a private contractor to provide a piece of instant messaging software for the package. </p>-->
-            <!--</div>-->
-        <!--</div>-->
-            <!--<div class ="card-action">-->
-            <!--<a href = "#">More Information</a>-->
-    <!--</div>-->
 
 
 
@@ -174,23 +206,70 @@
 
 
 
+    <!--  Scripts-->
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 
-<!--  Scripts-->
-  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 
-
-<script>
+    <script>
 document.addEventListener('DOMContentLoaded', function() {
     var elems = document.querySelectorAll('.dropdown-trigger');
     var instances = M.Dropdown.init(elems);
   });
 </script>
-  <!--<script src="js/materialize.js"></script>-->
-  <!--<script src="js/init.js"></script>-->
+    <!--<script src="js/materialize.js"></script>-->
+    <!--<script src="js/init.js"></script>-->
 
 
 
-{% endblock content %}
+
+ <!--  Footer Section   -->
+
+
+  <footer class="page-footer purple">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Company Bio</h5>
+          <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
+
+
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Settings</h5>
+          <ul>
+            <li><a class="white-text" href="/about"><i class="material-icons">book</i></a>
+            <li><a class="white-text" href="#!"><i class="material-icons">tablet</i></a>
+            <li><a class="white-text" href="#!"><i class ="material-icons">credit_card</i></a>
+            <li><a class="white-text" href="/questions"><i class="material-icons">feedback</i></a>
+          </ul>
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Connect</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Instagram</a></li>
+            <li><a class="white-text" href="#!">Twitter</a></li>
+            <li><a class="white-text" href="#!">Facebook</a></li>
+            <li><a class="white-text" href="#!">Snapchat</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      Made by <a class="brown-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+
+
+
+
+
+
 </body>
 </html>
 
@@ -220,36 +299,3 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
-<!--<div class="row">-->
-    <!--<div class="col s12 m6">-->
-      <!--<div class="card 100px">-->
-        <!--<div class="card-image small">-->
-          <!--<img src="{% static 'bob.jpeg' %}">-->
-          <!--<span class="card-title">Card Title</span>-->
-          <!--<a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>-->
-        <!--</div>-->
-        <!--<div class="card-content">-->
-          <!--<p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>-->
-        <!--</div>-->
-      <!--</div>-->
-    <!--</div>-->
-  <!--</div>-->
-
-
- <!--<div class="row">-->
-    <!--<div class="col s12 m7">-->
-      <!--<div class="card">-->
-        <!--<div class="card-image">-->
-          <!--<img src="{% static 'bob.jpeg' %}">-->
-          <!--<span class="card-title">Card Title</span>-->
-        <!--</div>-->
-        <!--<div class="card-content">-->
-          <!--<p>I am a very simple card. I am good at containing small bits of information.-->
-          <!--I am convenient because I require little markup to use effectively.</p>-->
-        <!--&lt;!&ndash;</div>&ndash;&gt;-->
-        <!--<div class="card-action">-->
-          <!--<a href="#">This is a link</a>-->
-        <!--</div>-->
-      <!--</div>-->
-    <!--</div>-->
-  <!--</div>-->

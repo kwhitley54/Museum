@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MICHAEL JACKSON</title>
+
+    <meta charset="UTF-8">
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+
+<!--- NavBar --->
+<ul id="dropdown1" class="dropdown-content">
+    <li><a href="/bob">BOB MARLEY</a></li>
+    <li><a href="/jackie">JACKIE ROBERSON</a></li>
+    <li><a href="/booker">BOOKER T WASHINGTON</a></li>
+    <li class="/divider"></li>
+    <li><a href="/jackson">MICHAEL JACKSON</a></li>
+    <li><a href="/jordan">MICHAEL JORDAN</a></li>
+    <li><a href="/fredrick">FREDRICK DOUGLAS</a></li>
+</ul>
+
+<nav>
+    <div class="nav-wrapper purple">
+        <a href="#!" class="purple brand-logo">African American History Museum</a>
+        <ul class="right purple hide-on-med-and-down">
+            <!-- Dropdown Trigger -->
+            <li><a href="#"> <i class = "material-icons">search</i></a></li>
+            <li><a href="/index">HOME</a></li>
+            <li><a href="/questions">FAQ</a></li>
+            <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">EXHIBITS<i class="material-icons right">arrow_drop_down</i></a></li>
+        </ul>
+    </div>
+</nav>
+
+
+
+{% load staticfiles %}
+
+<h1><img src="{% static 'mic2.gif' %}" alt = "Jackie" width="1800" height="700"/></h1>
+<i><h1>Michael Jackson</h1> </i>
+<i><h1></h1> </i>
+<p class="outset">
+<h2>
+Michael Joseph Jackson was born on August 29, 1958 in Gary, Indiana, and entertained audiences nearly his entire life. His father,
+Joe Jackson (no relation to Joe Jackson, also a musician), had been a guitarist, but was forced to give up his musical ambitions following
+his marriage to Michael's mother Katherine Jackson (née Katherine Esther Scruse). Together, they prodded their growing family's musical interests
+at home. By the early 1960s, the older boys Jackie, Tito and Jermaine had begun performing around the city; by 1964, Michael and Marlon had joined in.</p>
+
+A musical prodigy, Michael's singing and dancing talents were amazingly mature, and he soon became the dominant voice and focus of the Jackson 5. An
+opening act for such soul groups as the O-Jays and James Brown, it was Gladys Knight (not Diana Ross) who officially brought the group to Berry Gordy's
+attention, and by 1969, the boys were producing back-to-back chart-busting hits as Motown artists ("I Want You Back," "ABC," "Never Can Say Goodbye," "Got to Be There," etc.).
+As a product of the 1970s, the boys emerged as one of the most accomplished black pop / soul vocal groups in music history, successfully evolving from a group like
+The Temptations to a disco phenomenon.</p>
+
+Solo success for Michael was inevitable, and by the 1980s, he had become infinitely more popular than his brotherly group. Record sales consistently orbited,
+culminating in the biggest-selling album of all time, "Thriller" in 1982. A TV natural, he ventured rather uneasily into films, such as playing the Scarecrow
+in The Wiz (1978), but had much better luck with elaborate music videos.</p>
+
+In the 1990s, the downside as an 1980s pop phenomenon began to rear itself. Michael grew terribly child-like and introverted by his peerless celebrity. A rather
+timorous, androgynous figure to begin with, his physical appearance began to change drastically, and his behavior grew alarmingly bizarre, making him a consistent
+target for scandal-making, despite his numerous charitable acts. Two brief marriages -- one to Elvis Presley's daughter Lisa Marie Presley -- were forged and two
+ children produced by his second wife during that time, but the purposes behind them appeared image-oriented.</p>
+
+Michael Jackson died on June 25, 2009 in Los Angeles, California. His passion and artistry as a singer, dancer, writer and businessman were unparalleled, and it is
+these prodigious talents that will ultimately prevail over the extremely negative aspects of his troubled adult life.</p>
+
+
+<p class="outset">
+<h1><img src="{% static 'mic.jpg' %}" alt = "Jackie" width="1800" height="700"/></h1>
+
+
+
+ <script>
+document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.dropdown-trigger');
+    var instances = M.Dropdown.init(elems);
+  });
+</script>
+
+
+
+</body>
+</html>
