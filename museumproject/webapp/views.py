@@ -18,6 +18,7 @@ def about(request):
 
 
 
+
     return render(request, 'pages/about.html')
 
 def questions(request):
@@ -29,6 +30,12 @@ def questions(request):
 #     if request.method =='POST':
 #         URL_SEARCH
 #
+
+
+
+
+
+
 
 
 def exhibit(request):
@@ -54,3 +61,9 @@ def booker(request):
 
 def michael(request):
     return render(request, 'pages/michael.html')
+
+def map(request):
+    return render(request, 'pages/map.html')
+
+def submit(request):
+    return render(request, 'pages/submit.html')

@@ -2,10 +2,155 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>African American Museum</title>
+   <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+  <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>MAP</title>
 </head>
 <body>
+<!--- NavBar --->
+<ul id="dropdown1" class="dropdown-content">
+    <li><a href="/bob">BOB MARLEY</a></li>
+    <li><a href="/jackie">JACKIE ROBERSON</a></li>
+    <li><a href="/booker">BOOKER T WASHINGTON</a></li>
+    <li class="/divider"></li>
+    <li><a href="/jackson">MICHAEL JACKSON</a></li>
+    <li><a href="/jordan">MICHAEL JORDAN</a></li>
+    <li><a href="/fredrick">FREDRICK DOUGLAS</a></li>
+</ul>
+
+<nav>
+    <div class="nav-wrapper purple">
+        <a href="#!" class="purple brand-logo">African American History Museum</a>
+        <ul class="right purple hide-on-med-and-down">
+            <!-- Dropdown Trigger -->
+            <li><a href="#"> <i class = "material-icons">search</i></a></li>
+            <li><a href="/index">HOME</a></li>
+            <li><a href="/questions">FAQ</a></li>
+            <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">EXHIBITS<i class="material-icons right">arrow_drop_down</i></a></li>
+        </ul>
+    </div>
+</nav>
+
+
+<center>
 <h1>MUSEUM MAPS</h1>
+</center></body>
+{%load staticfiles %}
+
+<div class="slider">
+    <ul class="slides">
+      <li>
+        <img src="{% static 'map2.png' %}"> <!-- random image -->
+        <div class="caption center-align black-text">
+          <h3>OVEREVIEW</h3>
+          <h5 class="light grey-text text-lighten-3"></h5>
+        </div>
+      </li>
+      <li>
+        <img src="{% static 'map.png' %}"> <!-- random image -->
+        <div class="caption left-align white-text">
+          <h3>Slavery & Freedom (1400 - 1877)</h3>
+          <h5 class="light grey-text text-lighten-3"></h5>
+        </div>
+      </li>
+      <li>
+        <img src="{% static 'map3.png' %}"> <!-- random image -->
+        <div class="caption right-align">
+          <h3>Heritage Hall - Entrance Level</h3>
+          <h5 class="light grey-text text-lighten-3"></h5>
+        </div>
+      </li>
+      <li>
+        <img src="{% static 'map4.png' %}"> <!-- random image -->
+        <div class="caption center-align">
+          <h3>Community Galleries</h3>
+          <h5 class="light grey-text text-lighten-3"></h5>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+
+
+<h3></h3><blockquote class="paragraphs-item paragraphs-item--quote paragraphs-item--full anim-fadein" about="" typeof="" id="paragraphs-item-321" style="opacity: 1;">
+  <p>Welcome to the African American Museum. We invite you to explore all eight levels of the Museum on your visit, from Heritage Hall, to our galleries
+</p>
+  <!--<cite class="blockquote__cite">-->
+
+	<!--<span class="cite__name">Lonnie G. Bunch, III</span>-->
+
+	<!--<span class="cite__title">Founding Director, NMAAHC</span>-->
+  <!--</cite>-->
+</blockquote></center>
+
+
+
+
+
+<!--  Footer Section   -->
+
+
+  <footer class="page-footer purple">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Company Bio</h5>
+          <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
+
+
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Links</h5>
+          <ul>
+            <li><a class="white-text" href="/about">About<i class="material-icons"></i></a>
+            <li><a class="white-text" href="/exhibit">Exhibit<i class="material-icons"></i></a>
+            <li><a class="white-text" href="/Map">Map<i class ="material-icons"></i></a>
+            <li><a class="white-text" href="/questions">Questions<i class="material-icons"></i></a>
+          </ul>
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Connect</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Instagram</a></li>
+            <li><a class="white-text" href="#!">Twitter</a></li>
+            <li><a class="white-text" href="#!">Facebook</a></li>
+            <li><a class="white-text" href="#!">Snapchat</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      Made by <a class="brown-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+
+
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.slider');
+    var instances = M.Slider.init(elems);
+  });
+</script>
+
+
+
 
 
 

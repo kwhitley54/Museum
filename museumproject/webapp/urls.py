@@ -4,6 +4,8 @@ from  . import views
 
 
 
+
+
 urlpatterns = [
     url(r'^index',views.index, name = 'index'),
     url(r'^about',views.about, name = 'about'),
@@ -14,7 +16,10 @@ urlpatterns = [
     url(r'^fredrick',views.fredrick, name='fredrick'),
     url(r'^booker',views.booker, name='booker'),
     url(r'^jordan',views.jordan, name='jordan'),
-    url(r'^michael',views.michael, name='michael'),
+    url(r'^map',views.map, name='map'),
+    url(r'submit', views.submit, name='submit'),
+
+
 
 ]
 
