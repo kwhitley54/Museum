@@ -12,6 +12,11 @@
 <nav>
   <div class="nav-wrapper purple">
     <a href="#!" class="purple brand-logo">African American History Museum</a>
+    <a href="#" data-target = "mobile-nav" class = "sidenav-trigger">
+      <i class = "material-icons">menu</i>
+    </a>
+
+
     <ul class="right purple hide-on-med-and-down">
         <!-- Dropdown Trigger -->
         <li><a href="#"> <i class = "material-icons">search</i></a></li>
@@ -23,6 +28,21 @@
     </div>
 </nav>
 
+<ul class ="sidenav" id = "mobile-nav">
+      <li>
+        <a href ="/about">About</a>
+      </li>
+       <li>
+        <a href ="/exhibit">Exhibit</a>
+      </li>
+       <li>
+        <a href ="/map">Map</a>
+      </li>
+       <li>
+        <a href ="/questions">Feedback</a>
+      </li>
+    </ul>
+
 
 
 
@@ -31,6 +51,13 @@
     var elems = document.querySelectorAll('.dropdown-trigger');
     var instances = M.Dropdown.init(elems);
   });
+
+   document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.sidenav');
+    var instances = M.Sidenav.init(elems);
+  });
+
+
 </script>
 
 {% endblock content%}

@@ -1,8 +1,7 @@
 
 <!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/html">
-<!-- Nav -->
-{% include "./Navbar.html" %}
+
 <head>
     <meta charset="UTF-8">
     <!--<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>-->
@@ -21,6 +20,49 @@
 </head>
 <body>
 {% load staticfiles %}
+
+<!--- NavBar --->
+<ul id="dropdown1" class="dropdown-content">
+  <li><a href="/about">BOB MARLEY</a></li>
+  <li><a href="#!">JACKIE ROBERSON</a></li>
+  <li class="divider"></li>
+  <li><a href="#!">OTHER</a></li>
+</ul>
+
+<nav>
+  <div class="nav-wrapper purple">
+    <a href="#!" class="purple brand-logo">African American History Museum</a>
+    <a href ="#" data-target ="mobile-nav" class ="sidenav-trigger">
+        <i class = "material-icons">menu</i>
+    </a>
+    <ul class="right purple hide-on-med-and-down">
+        <!-- Dropdown Trigger -->
+        <li><a href="#"> <i class = "material-icons">search</i></a></li>
+      <li><a href="/index">HOME</a></li>
+      <li><a href="/questions">FAQ</a></li>
+        <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">EXHIBITS<i class="material-icons right">arrow_drop_down</i></a></li>
+    </ul>
+  </div>
+</nav>
+
+<ul class ="sidenav" id = "mobile-nav">
+      <li>
+        <a href ="/index">Home</a>
+      </li>
+       <li>
+        <a href ="/exhibit">Exhibit</a>
+      </li>
+       <li>
+        <a href ="/map">Map</a>
+      </li>
+       <li>
+        <a href ="/questions">Feedback</a>
+      </li>
+    </ul>
+
+
+
+
 
 <!--- Parallax Template -->
 <div class = "parallax-container">
@@ -103,12 +145,12 @@
 
         </div>
         <div class="col l3 s12">
-          <h5 class="white-text">Links</h5>
+          <h5 class="white-text">Settings</h5>
           <ul>
-            <li><a class="white-text" href="/about">About<i class="material-icons"></i></a>
-            <li><a class="white-text" href="/exhibit">Exhibit<i class="material-icons"></i></a>
-            <li><a class="white-text" href="/Map">Map<i class ="material-icons"></i></a>
-            <li><a class="white-text" href="/questions">Questions<i class="material-icons"></i></a>
+            <li><a class="white-text" href="/about"><i class="material-icons">book</i></a>
+            <li><a class="white-text" href="#!"><i class="material-icons">tablet</i></a>
+            <li><a class="white-text" href="#!"><i class ="material-icons">credit_card</i></a>
+            <li><a class="white-text" href="/questions"><i class="material-icons">feedback</i></a>
           </ul>
         </div>
         <div class="col l3 s12">
@@ -128,7 +170,6 @@
       </div>
     </div>
   </footer>
-
 
 
 
